@@ -1,3 +1,8 @@
+import Exib.Cliente;
+import Exib.Funcionario;
+import Exib.Mesa;
+import Exib.Reserva;
+
 import java.util.ArrayList;
 
 public class Restaurante {

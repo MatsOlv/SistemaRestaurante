@@ -1,4 +1,4 @@
-import Exib.Exibivel;
+package Exib;
 
 public class Mesa implements Exibivel {
 
@@ -31,7 +31,7 @@ public class Mesa implements Exibivel {
 
     @Override
     public void exibirDados() {
-        System.out.println("Mesa{" +
+        System.out.println("Exib.Mesa{" +
                 "numero=" + numero +
                 ", capacidade=" + capacidade +
                 ", disponivel=" + disponivel +

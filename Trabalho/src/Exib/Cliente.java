@@ -1,4 +1,6 @@
-public class Cliente extends Pessoa {
+package Exib;
+
+public class Cliente extends Pessoa implements Exibivel {
     private String historico;
 
     public Cliente(String nome, String telefone, String cpf, String historico) {
@@ -8,5 +10,10 @@ public class Cliente extends Pessoa {
 
     public String getHistorico () {
         return historico;
+    }
+
+    @Override
+    public void exibirDados() {
+
     }
 }
