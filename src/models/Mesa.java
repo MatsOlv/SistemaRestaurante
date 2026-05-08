@@ -1,5 +1,5 @@
 package Exib;
-
+import Exib.interfaces.Exibivel;
 public class Mesa implements Exibivel {
 
     private int numero;
@@ -31,10 +31,11 @@ public class Mesa implements Exibivel {
 
     @Override
     public void exibirDados() {
+        String status = disponiivel? "Disponivel" : "Ocupada";
         System.out.println("Exib.Mesa{" +
-                "numero=" + numero +
+                "Nº=" + numero +
                 ", capacidade=" + capacidade +
-                ", disponivel=" + disponivel +
+                ", status=" + status +
                 '}');
     }
 }
