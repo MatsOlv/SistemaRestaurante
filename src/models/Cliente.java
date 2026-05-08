@@ -1,4 +1,4 @@
-package Exib;
+package models;
 
 public class Cliente extends Pessoa implements Exibivel {
     private String historico;

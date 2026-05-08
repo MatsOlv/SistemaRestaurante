@@ -1,4 +1,4 @@
-package Exib;
+package models;
 
 public class Funcionario extends Pessoa {
 

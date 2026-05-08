@@ -1,4 +1,4 @@
-package Exib;
+package models;
 
 import java.time.LocalDateTime;
 
