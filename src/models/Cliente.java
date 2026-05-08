@@ -5,15 +5,9 @@ public class Cliente extends Pessoa implements Exibivel {
 
     public Cliente(String nome, String telefone, String cpf, String historico) {
         super(nome, telefone, cpf);
-        historico = historico;
     }
-
-    public String getHistorico () {
-        return historico;
-    }
-
     @Override
-    public void exibirDados() {
-
-    }
+    public void exibirDados() { System.out.println("Cliente: " + getNome() + " | CPF: " + cpf + " | Tel: " + getTelefone()); 
+                               
+}
 }
