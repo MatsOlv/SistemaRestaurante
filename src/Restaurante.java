@@ -1,7 +1,7 @@
-import Exib.Cliente;
-import Exib.Funcionario;
-import Exib.Mesa;
-import Exib.Reserva;
+import models.Cliente;
+import models.Funcionario;
+import models.Mesa;
+import models.Reserva;
 
 import java.util.ArrayList;
 
