@@ -28,6 +28,24 @@ public class Cliente extends Pessoa {
         c1.setTelefone(s.nextLine());
         return c1;
     }
+
+
+
+    public static void ConsultarCadastro(Cliente c1) {
+
+        if (c1 == null) {
+            System.out.println("Não há cadastros aqui");
+        } else {
+            System.out.println(
+                    "--------------------\n" +
+                            "Nome: " + c1.getNome() + "\n" +
+                            "Cpf: " + c1.getCpf() + "\n" +
+                            "Telefone: " + c1.getTelefone() + "\n" +
+                            "--------------------\n"
+            );
+        }
+    }
+
 }
 
 

@@ -5,18 +5,29 @@ public class Main {
     public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     Cliente c1 = null;
+    int escolha;
 
-        System.out.println(
-                "--------------------\n" +
-                "0 - Fechar Sistema\n"  +
-                "1 - Novo Cadastro\n" +
-                "2 - Fazer Login\n" +
-                "--------------------\n"
-        );
-        int escolha = sc.nextInt();
-        if (escolha == 1){
-           c1 = Cliente.Cadastrar();
-        }
+      do {
+          System.out.println(
+                  "--------------------\n" +
+                          "0 - Fechar Sistema\n" +
+                          "1 - Novo Cadastro\n" +
+                          "2 - Fazer Login\n" +
+                          "--------------------\n"
+          );
+          escolha = sc.nextInt();
+
+          if (escolha == 0) {
+              System.out.println("Encerrando o Sistema.....");
+          }else if (escolha == 1) {
+              c1 = Cliente.Cadastrar();
+          }else if (escolha == 2) {
+              Cliente.ConsultarCadastro(c1);
+          }else {
+              System.out.println("Comando Invalido, Digite novamente");
+          }
+
+      } while (escolha != 0);
 
 
         }
