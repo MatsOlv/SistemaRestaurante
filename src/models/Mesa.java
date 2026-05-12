@@ -12,7 +12,7 @@ public class Mesa implements Exibivel {
         this.numero = numero;
     }
 
-    public boolean getNumero() {
+    public int getNumero() {
         return numero;
     }
 

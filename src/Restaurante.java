@@ -32,6 +32,7 @@ public class Restaurante {
         for (int i =0; i < mesas.size(); i++) {
             if (mesas.get(i).getNumero() == mesa){
                 mesa1 = mesas.get(i);
+                break;
 
             }
         }
