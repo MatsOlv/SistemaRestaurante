@@ -37,4 +37,9 @@ public class Restaurante {
             }
         }
     }
-}
+
+    public void cadastrarCliente(Cliente cliente){
+        clientes.add(cliente);
+
+        }
+    }

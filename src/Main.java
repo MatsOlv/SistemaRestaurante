@@ -12,7 +12,7 @@ public class Main {
                   "--------------------\n" +
                           "0 - Fechar Sistema\n" +
                           "1 - Novo Cadastro\n" +
-                          "2 - Fazer Login\n" +
+                          "2 - Consultar Dados\n" +
                           "--------------------\n"
           );
           escolha = sc.nextInt();
@@ -20,9 +20,9 @@ public class Main {
           if (escolha == 0) {
               System.out.println("Encerrando o Sistema.....");
           }else if (escolha == 1) {
-              c1 = Cliente.Cadastrar();
+              c1 = Cadastro.Cadastrar();
           }else if (escolha == 2) {
-              Cliente.ConsultarCadastro(c1);
+              Cadastro.ConsultarCadastro(c1);
           }else {
               System.out.println("Comando Invalido, Digite novamente");
           }

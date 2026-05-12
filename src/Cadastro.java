@@ -1,19 +1,19 @@
-package models;
+import models.Cliente;
 import java.util.Scanner;
 
-public class Cliente extends Pessoa {
-    private String historico;
+public class Cadastro extends Cliente {
 
-    public Cliente(String nome, String telefone, String cpf, String historico) {
-        super(nome, telefone, cpf);
-        this.historico = historico;
-    }
+    public static Cliente Cadastrar() {
 
-    public Cliente(String historico) {
-        this.historico = historico;
-    }
-
-    public Cliente() {
+        Scanner s = new Scanner(System.in);
+        Cliente c1 = new Cliente();
+        System.out.println("Digite seu nome de usuario:");
+        c1.setNome(s.nextLine());
+        System.out.println("Digite seu CPF:");
+        c1.setCpf(s.nextLine());
+        System.out.println("Digite seu Telefone:");
+        c1.setTelefone(s.nextLine());
+        return c1;
     }
 
     public static void ConsultarCadastro(Cliente c1) {
@@ -30,9 +30,4 @@ public class Cliente extends Pessoa {
             );
         }
     }
-
 }
-
-
-
-
