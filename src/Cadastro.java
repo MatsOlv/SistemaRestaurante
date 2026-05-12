@@ -16,7 +16,7 @@ public class Cadastro extends Cliente {
         return c1;
     }
 
-    public static void ConsultarCadastro(Cliente c1) {
+    public static void ConsultarCadastro (Cliente c1) {
 
         if (c1 == null) {
             System.out.println("Não há cadastros aqui");

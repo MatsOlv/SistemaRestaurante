@@ -1,3 +1,5 @@
+import erro.ClienteNotFoundException;
+import erro.MesaNotFoundException;
 import models.Cliente;
 import models.Funcionario;
 import models.Mesa;
@@ -19,7 +21,7 @@ public class Restaurante {
         this.reserva = reserva;
         this.funcionario = funcionario;
     }
-    public void criarReserva (String cliente, int mesa, LocalDate data, LocalTime hora){
+    public void criarReserva (String cliente, int mesa, LocalDate data, LocalTime hora)  throws ClienteNotFoundException, MesaNotFoundException {
         Cliente cliente1 = null;
         Mesa mesa1 = null;
         for(int i =0; i < clientes.size(); i++) {
@@ -28,12 +30,20 @@ public class Restaurante {
                 break;
             }
         }
+// terminando ainda:
+//        if (Cliente c1 == null) {
+//            throw new ClienteNotFoundException(String idCliente);
+       // }
+
+//        if(mesa1 == null) {
+//            throw new MesaNotFoundException(String message);
+     //   }
+
 
         for (int i =0; i < mesas.size(); i++) {
             if (mesas.get(i).getNumero() == mesa){
                 mesa1 = mesas.get(i);
                 break;
-
             }
         }
     }

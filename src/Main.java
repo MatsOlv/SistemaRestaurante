@@ -1,5 +1,4 @@
 import models.Cliente;
-
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -26,9 +25,7 @@ public class Main {
           }else {
               System.out.println("Comando Invalido, Digite novamente");
           }
-
       } while (escolha != 0);
-
 
         }
     }
