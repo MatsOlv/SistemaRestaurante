@@ -24,8 +24,8 @@ public class Restaurante {
     public void criarReserva (String cliente, int mesa, LocalDate data, LocalTime hora)  throws ClienteNotFoundException, MesaNotFoundException {
         Cliente cliente1 = null;
         Mesa mesa1 = null;
-        for(int i =0; i < clientes.size(); i++) {
-            if ( clientes.get(i).getCpf().equals(cliente)){
+        for (int i = 0; i < clientes.size(); i++) {
+            if (clientes.get(i).getCpf().equals(cliente)) {
                 cliente1 = clientes.get(i);
                 break;
             }
@@ -33,23 +33,36 @@ public class Restaurante {
 // terminando ainda:
 //        if (Cliente c1 == null) {
 //            throw new ClienteNotFoundException(String idCliente);
-       // }
+        // }
 
 //        if(mesa1 == null) {
 //            throw new MesaNotFoundException(String message);
-     //   }
+        //   }
 
 
-        for (int i =0; i < mesas.size(); i++) {
-            if (mesas.get(i).getNumero() == mesa){
+        for (int i = 0; i < mesas.size(); i++) {
+            if (mesas.get(i).getNumero() == mesa) {
                 mesa1 = mesas.get(i);
                 break;
             }
         }
-    }
 
+
+
+    }
     public void cadastrarCliente(Cliente cliente){
         clientes.add(cliente);
 
         }
-    }
+
+public void CadastrarMesa (){
+
+    mesas.add(new Mesa(1, 2, true));
+    mesas.add(new Mesa(2, 2, true));
+    mesas.add(new Mesa(3, 4, true));
+    mesas.add(new Mesa(4, 4, true));
+    mesas.add(new Mesa(5, 6, true));
+    mesas.add(new Mesa(6, 6, true));
+
+}
+}

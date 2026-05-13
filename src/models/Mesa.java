@@ -6,10 +6,10 @@ public class Mesa implements Exibivel {
     private int capacidade;
     private boolean disponivel;
 
-    public Mesa(boolean disponivel, int capacidade, int numero) {
-        this.disponivel = true;
-        this.capacidade = capacidade;
+    public Mesa(int numero, int capacidade, boolean disponivel) {
         this.numero = numero;
+        this.capacidade = capacidade;
+        this.disponivel = true;
     }
 
     public int getNumero() {
@@ -37,5 +37,8 @@ public class Mesa implements Exibivel {
                 ", capacidade=" + capacidade +
                 ", status=" + status +
                 '}');
+
+
+
     }
 }
